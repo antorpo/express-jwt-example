@@ -7,7 +7,6 @@ module.exports = (router) => {
   // Creamos el endpoint para logeo de usuarios que recibe un callback con (peticion, respuesta)
   router.post("/login", (request, response) => {
 
-    console.log(request);
     // Chequeamos si el usuario y la contraseña son correctos  
     const { username, password } = request.body;
 
